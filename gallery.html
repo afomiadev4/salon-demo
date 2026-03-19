@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lookbook/Gallery</title>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=Poppins:wght@300;400;600&display=swap"
+        rel="stylesheet">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: { extend: { colors: { gold: '#D4AF37' }, fontFamily: { serif: [ 'Playfair Display', 'serif' ], sans: [ 'Poppins', 'sans-serif' ] } } }
+        }
+    </script>
+</head>
+
+<body class="bg-white font-sans text-black pt-24">
+    <nav
+        class="fixed top-0 w-full z-50 bg-white/90 backdrop-blur-sm border-b border-gray-100 py-4 px-8 flex justify-between items-center text-black">
+        <div class="text-2xl font-serif font-bold tracking-tighter uppercase">
+            <a href="index.html">ABELA<span class="text-gold italic">ZAGOL</span></a>
+        </div>
+        <div class="hidden md:flex space-x-10 text-xs uppercase tracking-[0.2em] font-medium">
+            <a href="index.html" class="hover:text-gold transition-colors">Home</a>
+            <a href="index.html#services" class="hover:text-gold transition-colors">Services</a>
+            <a href="gallery.html" class="text-gold">Gallery</a>
+            <a href="#contact" class="hover:text-gold transition-colors">Contact</a>
+        </div>
+        <a href="https://t.me/YourUsername"
+            class="bg-black text-white px-6 py-2 text-[10px] uppercase tracking-widest hover:bg-gold transition-all">
+            Book Now
+        </a>
+    </nav>
+
+    <header class="py-16 px-6 text-center">
+        <h1 class="font-serif text-5xl md:text-6xl mb-4 italic">The Lookbook</h1>
+        <p class="text-gray-400 uppercase tracking-[0.3em] text-[10px]">A collection of our finest artistry in Addis
+            Ababa</p>
+    </header>
+
+    <main class="max-w-7xl mx-auto px-6 pb-24">
+        <div class="columns-1 md:columns-2 lg:columns-3 gap-4 space-y-4">
+            <div class="break-inside-avoid overflow-hidden group">
+                <img src="https://images.unsplash.com/photo-1649931758079-5e927f884179?auto=format&fit=crop&q=80"
+                    class="w-full hover:scale-105 transition-transform duration-700 shadow-lg" alt="Braid Style">
+            </div>
+            <div class="break-inside-avoid overflow-hidden group">
+                <img src="https://images.unsplash.com/photo-1595476108010-b4d1f102b1b1?auto=format&fit=crop&q=80"
+                    class="w-full hover:scale-105 transition-transform duration-700 shadow-lg" alt="Hair Extension">
+            </div>
+            <div class="break-inside-avoid overflow-hidden group">
+                <img src="https://images.unsplash.com/photo-1620331311520-246422fd82f9?auto=format&fit=crop&q=80"
+                    class="w-full hover:scale-105 transition-transform duration-700 shadow-lg" alt="Nail Art">
+            </div>
+            <div class="break-inside-avoid overflow-hidden group">
+                <img src="https://images.unsplash.com/photo-1522337660859-02fbefca4702?auto=format&fit=crop&q=80"
+                    class="w-full hover:scale-105 transition-transform duration-700 shadow-lg" alt="Salon Vibe">
+            </div>
+            <div class="break-inside-avoid overflow-hidden group">
+                <img src="https://images.unsplash.com/photo-1605497746444-ac9dbd397ea8?auto=format&fit=crop&q=80"
+                    class="w-full hover:scale-105 transition-transform duration-700 shadow-lg" alt="Lace Install">
+            </div>
+            <div class="break-inside-avoid overflow-hidden group">
+                <img src="https://images.unsplash.com/photo-1562322140-8baeececf3df?auto=format&fit=crop&q=80"
+                    class="w-full hover:scale-105 transition-transform duration-700 shadow-lg" alt="Treatment">
+            </div>
+        </div>
+    </main>
+
+    <footer id="contact" class="bg-black text-white py-20 px-6">
+        <div class="max-w-7xl mx-auto">
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-16 mb-16">
+
+                <div class="space-y-6">
+                    <div class="text-3xl font-serif font-bold tracking-tighter uppercase">
+                        ABELA <span class="text-gold italic">ZAGOL</span>
+                    </div>
+                    <p class="text-gray-400 font-light leading-relaxed text-sm">
+                        Redefining beauty standards in Addis Ababa. We specialize in premium hair artistry and luxury
+                        aesthetics for the modern woman.
+                    </p>
+                    <div class="flex space-x-6">
+                        <a href="#"
+                            class="text-gray-400 hover:text-gold transition-colors text-xs uppercase tracking-widest">Instagram</a>
+                        <a href="https://t.me/YourChannel"
+                            class="text-gray-400 hover:text-gold transition-colors text-xs uppercase tracking-widest">Telegram</a>
+                    </div>
+                </div>
+
+                <div class="space-y-6">
+                    <h4 class="text-gold uppercase tracking-[0.3em] text-[10px] font-bold">Operating Hours</h4>
+                    <ul class="text-sm space-y-3 font-light text-gray-300">
+                        <li class="flex justify-between"><span>Mon — Sat</span> <span>9:00 AM - 8:00 PM</span></li>
+                        <li class="flex justify-between"><span>Sunday</span> <span>10:00 AM - 6:00 PM</span></li>
+                    </ul>
+                </div>
+
+                <div class="space-y-6">
+                    <h4 class="text-gold uppercase tracking-[0.3em] text-[10px] font-bold">Visit Us</h4>
+                    <a href="https://maps.google.com/?q=Bole+Edna+Mall+Addis+Ababa" target="_blank"
+                        class="hover:text-gold italic">
+                        Summit, Tsion Bldg 2nd Floor<br>Addis Ababa, Ethiopia
+                    </a>
+                    <br>
+                    <a href="tel:+251911234567" class="hover:text-gold tracking-widest">+251 91 123 4567</a>
+                </div>
+
+            </div>
+
+            <div class="pt-8 border-t border-gray-800 text-center">
+                <p class="text-[10px] text-gray-600 uppercase tracking-[0.5em]">
+                    &copy; 2026 ABELA ZAGOL. DESIGNED FOR EXCELLENCE.
+                </p>
+            </div>
+        </div>
+    </footer>
+
+    <a href="https://t.me/YourUsername"
+        class="fixed bottom-8 right-8 z-[100] bg-[#0088cc] p-4 rounded-full shadow-2xl hover:scale-110 transition-transform duration-300">
+        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="white">
+            <path
+                d="M12 0c-6.627 0-12 5.373-12 12s5.373 12 12 12 12-5.373 12-12-5.373-12-12-12zm5.891 7.007l-2.012 9.487c-.149.665-.545.83-.1.527l-3.071-2.263-1.482 1.427c-.163.164-.3.3-.615.3l.221-3.134 5.711-5.158c.247-.22-.054-.344-.384-.124l-7.058 4.444-3.038-.951c-.661-.206-.674-.661.138-.977l11.87-4.577c.55-.203 1.031.127.815.903z" />
+        </svg>
+    </a>
+</body>
+
+</html>
