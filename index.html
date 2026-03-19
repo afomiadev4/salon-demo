@@ -5,11 +5,49 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Salon Demo Site</title>
+
+    <link
+        href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=Poppins:wght@300;400;600&display=swap"
+        rel="stylesheet">
+
     <script src="https://cdn.tailwindcss.com"></script>
+
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        gold: '#D4AF37',
+                    },
+                    fontFamily: {
+                        serif: [ 'Playfair Display', 'serif' ],
+                        sans: [ 'Poppins', 'sans-serif' ],
+                    }
+                }
+            }
+        }
+    </script>
 </head>
 
 <body>
-    <h1 class="text-4xl font-bold text-gold">Testing the Vibe</h1>
+    <nav
+        class="fixed w-full z-50 bg-white/90 backdrop-blur-sm border-b border-gray-100 py-4 px-8 flex justify-between items-center">
+        <div class="text-2xl font-serif font-bold tracking-tighter uppercase">
+            ABELA<span class="text-gold italic">ZAGOL</span>
+        </div>
+
+        <div class="hidden md:flex space-x-10 text-xs uppercase tracking-[0.2em] font-medium text-gray-600">
+            <a href="#home" class="hover:text-gold transition-colors">Home</a>
+            <a href="#services" class="hover:text-gold transition-colors">Services</a>
+            <a href="#gallery" class="hover:text-gold transition-colors">Gallery</a>
+            <a href="#contact" class="hover:text-gold transition-colors">Contact</a>
+        </div>
+
+        <button
+            class="bg-black text-white px-6 py-2 text-[10px] uppercase tracking-widest hover:bg-gold transition-all duration-300">
+            Book Appointment
+        </button>
+    </nav>
 </body>
 
 </html>
